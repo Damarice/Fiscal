@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fiscal Hub</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Fiscal Hub, NGO, Social Impact" name="keywords">
+    <meta content="Fiscal Hub is an NGO working towards fiscal justice, governance, socio-economic inclusion, and institutional development." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid header-top">
+        <div class="container d-flex align-items-center">
+            <div class="d-flex align-items-center h-100">
+                <a href="#" class="navbar-brand" style="height: 125px;">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="w-100 h-100">
+                <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px;">
+                    <div class="row gx-0 align-items-center">
+                        <div class="col-lg-8 text-center text-lg-center mb-lg-0">
+                            <div class="d-flex flex-wrap">
+                                <div class="border-end border-primary pe-3">
+                                    <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Maisonette No.2 Nicholson Drive, Off Ngong Road</a>
+                                </div>
+                                <div class="ps-3">
+                                    <a href="mailto:info@fiscalhub.org" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>info@fiscalhub.org</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center text-lg-end">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex border-end border-primary pe-3">
+                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-bar px-0 py-lg-0" style="height: 80px;">
+                    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
+                        <a href="#" class="navbar-brand-2">
+                            <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i></h1>
+                            <img src="img/logo.jpeg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav mx-0 mx-lg-auto bg-white">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">Who Are We</a>
+                                <a href="service.html" class="nav-item nav-link">What We Do</a>
+                                <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown">Media</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog</a>
+                                    <a href="news.html" class="dropdown-item">News and Publications</a>
+                                    <a href="gallery.html" class="dropdown-item">Image Gallery and Videos</a>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-primary">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="Search..." aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="btn bg-light border input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+>
+       <!-- Carousel Start -->
+<div class="header-carousel owl-carousel overflow-hidden">
+    <div class="header-carousel-item hero-section">
+        <div class="hero-bg-half-1"></div>
+        <div class="hero-shape-1"></div>
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7 animated fadeInLeft">
+                        <div class="text-sm-center text-md-start">
+                            <h4 class="text-white text-uppercase fw-bold mb-4">Promoting Fiscal Transparency</h4>
+                            <h1 class="display-2 text-white mb-4">Advancing Accountability and Fairness</h1>
+                            <p class="mb-5 fs-5">At CFA, we are dedicated to fostering a just, fair, and robust society through strategic advocacy and evidence-based research. Join us in promoting transparency and accountability in public resource management.</p>
+                            <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Learn More</a>
+                                <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Get Involved</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-carousel-item hero-section">
+        <div class="hero-bg-half-2"></div>
+        <div class="hero-shape-2"></div>
+        <div class="carousel-caption">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7 animated fadeInLeft">
+                        <div class="text-sm-center text-md-start">
+                            <h4 class="text-white text-uppercase fw-bold mb-4">Empowering Civic Engagement</h4>
+                            <h1 class="display-2 text-white mb-4">Championing Inclusive Governance</h1>
+                            <p class="mb-5 fs-5">CFA strives to enhance governance by advocating for the inclusion of marginalized groups and ensuring equal access to public resources. Explore how we work to make governance more transparent and participatory.</p>
+                            <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                <a class="btn btn-light py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Learn More</a>
+                                <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Get Involved</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+<!-- About Start -->
+<div class="container-fluid about py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="h-100">
+                    <h4 class="text-primary">About Us</h4>
+                    <h1 class="display-4 mb-4">Advancing Fiscal Transparency and Accountability</h1>
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <a href="#" class="d-flex">
+                                <span class="fas fa-balance-scale fa-3x me-3"></span>
+                                <h4 class="mb-0">Fiscal Transparency</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="d-flex">
+                                <span class="fas fa-handshake fa-3x me-3"></span>
+                                <h4 class="mb-0">Effective Governance</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mb-4">The Centre for Fiscal Affairs (CFA) is dedicated to promoting fiscal transparency, accountability, and participatory governance. Our mission is to create a fair and robust society through strategic advocacy and comprehensive policy research. We work collaboratively with government agencies, non-state actors, and development partners to ensure equitable management of public resources.</p>
+                    <div class="text-dark mb-4">
+                        <p class="fs-5"><span class="fa fa-check text-primary me-2"></span> Advocating for transparent fiscal policies and public spending.</p>
+                        <p class="fs-5"><span class="fa fa-check text-primary me-2"></span> Empowering citizens to participate in governance.</p>
+                        <p class="fs-5"><span class="fa fa-check text-primary me-2"></span> Enhancing accountability through evidence-based research.</p>
+                    </div>
+                    <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Get Involved</a>
+                </div>
+            </div>
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="position-relative h-100">
+                    <img src="img/about-1.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Fiscal Transparency">
+                    <div class="bg-white">
+                        <div class="position-absolute pt-3 bg-white" style="width: 50%; left: 0; bottom: 0;">
+                            <div class="bg-primary p-4">
+                                <h4 class="display-2 mb-0">10+</h4>
+                                <p class="text-white fs-5 mb-0">Years of Advocacy</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute p-3 bg-white pb-0 pe-0" style="width: 50%; bottom: 0; right: 0;">
+                            <img src="img/about-2.jpg" class="img-fluid" alt="Community Engagement">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Banner Start -->
+<div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s">
+    <div class="banner-design-1"></div>
+    <div class="banner-design-2"></div>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-8">
+                <div class="">
+                    <h4 class="text-white">Get Involved with CFA</h4>
+                    <h1 class="display-4 text-white mb-0">Advancing Fiscal Transparency and Accountability for a Stronger Society</h1>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center justify-content-lg-end h-100">
+                    <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">Join Our Mission</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner End -->
+
+
+
+<!-- What We Do Start -->
+<div class="container-fluid what-we-do py-5">
+    <div class="container py-5">
+        <div class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">What We Do</h4>
+            <h1 class="display-4 mb-4">Empowering Civic Engagement and Promoting Accountability</h1>
+            <p class="mb-0">CFA employs evidence-based policy research and analysis, strategic communications, and effective advocacy to facilitate civic engagement, inform public discourse on taxation, public debt, and public spending, and promote effective service delivery at sub-national, national, and regional levels. Our work is organized into three key thematic areas, each designed to address critical issues and drive meaningful change.</p>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-3 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="nav flex-column nav-pills">
+                    <a class="nav-link active" id="nav-fiscal-justice-tab" data-bs-toggle="pill" href="#WhatWeDoTab-1">
+                        <i class="bi bi-graph-up"></i> Fiscal Justice
+                    </a>
+                    <a class="nav-link" id="nav-governance-tab" data-bs-toggle="pill" href="#WhatWeDoTab-2">
+                        <i class="bi bi-person-check"></i> Governance & Socio-Economic Inclusion
+                    </a>
+                    <a class="nav-link" id="nav-institutional-development-tab" data-bs-toggle="pill" href="#WhatWeDoTab-3">
+                        <i class="bi bi-building"></i> Institutional Development
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="tab-content">
+                    <div id="WhatWeDoTab-1" class="tab-pane fade show p-0 active">
+                        <div class="service-carousel owl-carousel">
+                            <div class="service-item">
+                                <img src="img/fiscal-justice-1.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Fiscal Transparency and Accountability</h4>
+                                    <p class="mb-4">Fiscal transparency and accountability are crucial for sustainable economic growth and development. Our focus is on ensuring that citizens understand how their government manages public finances and promoting transparent and accountable fiscal policies and practices.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <img src="img/fiscal-justice-2.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Empowering Citizens for Fiscal Justice</h4>
+                                    <p class="mb-4">We work to build the capacity of citizens, including women, youth, and persons with disabilities, to demand transparency and accountability in public resource management and advocate for reforms at all levels of government.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="WhatWeDoTab-2" class="tab-pane fade show p-0">
+                        <div class="service-carousel owl-carousel">
+                            <div class="service-item">
+                                <img src="img/governance-inclusion-1.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Advancing Governance and Inclusivity</h4>
+                                    <p class="mb-4">We are committed to enhancing governance by amplifying the voices of marginalized groups, advocating for gender equality, and promoting citizen participation in decision-making processes.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <img src="img/governance-inclusion-2.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Climate Change and Justice</h4>
+                                    <p class="mb-4">Our programs focus on ensuring that climate justice policies protect the rights of the most vulnerable, promote equity, and foster environments where communities can thrive amidst climate challenges.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="WhatWeDoTab-3" class="tab-pane fade show p-0">
+                        <div class="service-carousel owl-carousel">
+                            <div class="service-item">
+                                <img src="img/institutional-development-1.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Capacity Building and Training</h4>
+                                    <p class="mb-4">We offer workshops and seminars on fiscal transparency, governance, and policy analysis to enhance the skills and knowledge of our partners and stakeholders.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <img src="img/institutional-development-2.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Technical Assistance and Advisory Services</h4>
+                                    <p class="mb-4">We provide technical assistance, monitoring and evaluation support, and expert advice to help partners develop and implement effective policies and practices.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <img src="img/institutional-development-3.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Partnership and Network Building</h4>
+                                    <p class="mb-4">We organize forums and roundtables to foster collaboration, form coalitions, and promote public-private partnerships to improve advocacy and service delivery.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <img src="img/institutional-development-4.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Research and Knowledge Management</h4>
+                                    <p class="mb-4">We establish knowledge hubs, produce reports, policy briefs, and publications, and create online platforms to share resources and best practices.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <img src="img/institutional-development-5.jpg" class="img-fluid w-100" alt="">
+                                <div class="border border-top-0 p-4">
+                                    <h4 class="mb-3">Community Engagement and Awareness</h4>
+                                    <p class="mb-4">We conduct advocacy campaigns, facilitate community dialogues, and provide digital literacy training to raise awareness and foster inclusive participation.</p>
+                                    <a class="btn btn-primary py-2 px-4" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- What We Do End -->
+
+
+ <!-- Projects Start -->
+<div class="container-fluid projects bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div>
+                    <h4 class="text-primary">Our Projects</h4>
+                    <h1 class="display-4 mb-4">How We Drive Change Through Our Projects</h1>
+                    <p class="mb-5">Our projects are designed to address critical issues through comprehensive research, effective advocacy, and capacity strengthening. Here's an overview of how we work:</p>
+                    <ul class="nav">
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-1">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-search small"></span></div><span>Research and Policy Analysis</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-2">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bullhorn small"></span></div><span>Advocacy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-white mb-4 w-100">
+                            <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-3">
+                                <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-chalkboard-teacher small"></span></div><span>Capacity Strengthening</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="tab-content">
+                    <!-- Research and Policy Analysis Tab -->
+                    <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
+                        <div class="projects-item">
+                            <img src="img/research.jpg" class="img-fluid w-100" alt="Research and Policy Analysis">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-3">Research and Policy Analysis</h4>
+                                <p class="mb-4">CFA undertakes evidence-based research to generate insights for informing and influencing policy and advocacy interventions. We produce well-researched, empirical, and accurate policy briefs, reports, and working papers on fiscal transparency, accountability, and prudent resource utilization at national and sub-national levels. Our policy analysis focuses on understanding different policy directions and their effects on citizen well-being, using both qualitative and quantitative data.</p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Advocacy Tab -->
+                    <div id="ProjectsTab-2" class="tab-pane fade show p-0">
+                        <div class="projects-item">
+                            <img src="img/advocacy.jpg" class="img-fluid w-100" alt="Advocacy">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-3">Advocacy</h4>
+                                <p class="mb-4">CFA promotes citizen advocacy in the formulation, review, implementation, and oversight of public policies on taxation, public debt, and public spending. We leverage research to support our advocacy efforts, aiming to empower citizens and enhance their capacity to hold governments accountable. CFA also participates in various advocacy campaigns both locally and regionally to strengthen fiscal transparency and accountability for better service delivery.</p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Capacity Strengthening Tab -->
+                    <div id="ProjectsTab-3" class="tab-pane fade show p-0">
+                        <div class="projects-item">
+                            <img src="img/capacity.jpg" class="img-fluid w-100" alt="Capacity Strengthening">
+                            <div class="projects-content bg-white p-4">
+                                <h4 class="mb-3">Capacity Strengthening</h4>
+                                <p class="mb-4">Through interaction with stakeholders and partners, CFA addresses identified gaps by offering tailor-made training that responds to their needs. Our capacity strengthening initiatives are designed to build the skills and knowledge necessary for effective advocacy and implementation of public policies.</p>
+                                <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
+
+  <!-- Impact Start -->
+<div class="container-fluid impact pb-5">
+    <div class="container pb-5">
+        <div class="d-flex flex-column mx-auto text-center mb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Our Impact</h4>
+            <h1 class="display-4 mb-4">Making a Difference with Every Project</h1>
+            <p class="mb-0">At Fiscal Hub, we are committed to driving positive change through our impactful projects. Our efforts extend beyond financial management, as we strive to create sustainable growth and improve the lives of individuals and communities.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="impact-item">
+                    <div class="impact-img">
+                        <img src="img/impact-1.jpg" class="img-fluid w-100" alt="Boosting Economic Development">
+                    </div>
+                    <div class="impact-content bg-light text-center p-4">
+                        <h4>Boosting Economic Development</h4>
+                        <p class="mb-0">Our strategic financial solutions and advisory services have played a crucial role in supporting local businesses and startups. By providing expert guidance and resources, we help drive economic growth and create job opportunities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="impact-item">
+                    <div class="impact-img">
+                        <img src="img/impact-2.jpg" class="img-fluid w-100" alt="Enhancing Financial Literacy">
+                    </div>
+                    <div class="impact-content bg-light text-center p-4">
+                        <h4>Enhancing Financial Literacy</h4>
+                        <p class="mb-0">We are dedicated to improving financial literacy across communities. Our educational programs and workshops empower individuals with the knowledge and skills to make informed financial decisions and manage their resources effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="impact-item">
+                    <div class="impact-img">
+                        <img src="img/impact-3.jpg" class="img-fluid w-100" alt="Supporting Sustainable Initiatives">
+                    </div>
+                    <div class="impact-content bg-light text-center p-4">
+                        <h4>Supporting Sustainable Initiatives</h4>
+                        <p class="mb-0">Our commitment to sustainability is reflected in our support for eco-friendly projects and initiatives. We work with partners to promote sustainable practices and reduce environmental impact through responsible financial management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="impact-item">
+                    <div class="impact-img">
+                        <img src="img/impact-4.jpg" class="img-fluid w-100" alt="Empowering Local Communities">
+                    </div>
+                    <div class="impact-content bg-light text-center p-4">
+                        <h4>Empowering Local Communities</h4>
+                        <p class="mb-0">Through community-focused projects and financial support, we are empowering local groups and organizations to achieve their goals. Our efforts foster community development, promote social welfare, and enhance overall quality of life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Impact End -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial bg-dark py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
+                <h4 class="text-primary">Testimonial</h4>
+                <h1 class="display-4 text-white mb-4">Powerful Praise Heard From Our Customers</h1>
+                <p class="mb-4">Hear directly from those who have benefited from our services. Their feedback is a testament to our commitment to excellence and customer satisfaction.</p>
+                <a class="btn btn-light py-3 px-5" href="#">View All Reviews</a>
+            </div>
+            <div class="col-lg-6 col-xl-7 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                        <div class="testimonial-inner p-4">
+                            <img src="img/testimonial-1.jpg" class="img-fluid" alt="Jane Mwangi">
+                            <div class="ms-4">
+                                <h4>Jane Mwangi</h4>
+                                <p>Business Owner</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-text p-4">
+                            <p class="mb-0">“The exceptional service and attention to detail provided by this team have transformed the way I manage my business finances. Their expertise is truly unmatched!”</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                        <div class="testimonial-inner p-4">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="David Odhiambo">
+                            <div class="ms-4">
+                                <h4>David Odhiambo</h4>
+                                <p>Entrepreneur</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star text-body"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-text p-4">
+                            <p class="mb-0">“Their comprehensive financial solutions helped streamline my operations and boosted my business’s growth. I highly recommend their services.”</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote"><i class="fa fa-quote-right fa-2x"></i></div>
+                        <div class="testimonial-inner p-4">
+                            <img src="img/testimonial-3.jpg" class="img-fluid" alt="Lydia Achieng">
+                            <div class="ms-4">
+                                <h4>Lydia Achieng</h4>
+                                <p>Financial Consultant</p>
+                                <div class="d-flex text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-text p-4">
+                            <p class="mb-0">“Working with this team has been a game-changer for my consulting practice. Their insights and support have been invaluable in achieving my financial goals.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<!-- Partners Start -->
+<div class="container-fluid partners-section bg-light py-5">
+    <div class="container py-5">
+        <h4 class="text-primary text-center">Our Partners</h4>
+        <div class="partners-carousel">
+            <div class="partners-track">
+                <div class="partner-item">
+                    <img src="img/cspen-logo.jpg" class="img-fluid" alt="CSPEN">
+                </div>
+                <div class="partner-item">
+                    <img src="img/okoa-uchumi-logo.jpg" class="img-fluid" alt="Okoa Uchumi">
+                </div>
+                <div class="partner-item">
+                    <img src="img/uraia-trust-logo.jpg" class="img-fluid" alt="Uraia Trust">
+                </div>
+                <div class="partner-item">
+                    <img src="img/mzalendo-trust-logo.jpg" class="img-fluid" alt="Mzalendo Trust">
+                </div>
+                <div class="partner-item">
+                    <img src="img/twaweza-ea-logo.jpg" class="img-fluid" alt="Twaweza EA">
+                </div>
+                <div class="partner-item">
+                    <img src="img/institute-for-social-accountability-logo.jpg" class="img-fluid" alt="Institute for Social Accountability">
+                </div>
+                <div class="partner-item">
+                    <img src="img/transparency-international-logo.jpg" class="img-fluid" alt="Transparency International">
+                </div>
+                <div class="partner-item">
+                    <img src="img/ayt-logo.jpg" class="img-fluid" alt="AYT">
+                </div>
+                <div class="partner-item">
+                    <img src="img/transform-health-kenya-logo.jpg" class="img-fluid" alt="Transform Health Kenya">
+                </div>
+                <div class="partner-item">
+                    <img src="img/kelin-logo.jpg" class="img-fluid" alt="KELIN">
+                </div>
+                <div class="partner-item">
+                    <img src="img/kehia-logo.jpg" class="img-fluid" alt="KeHIA">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Partners End -->
+
+<!-- Footer Start -->
+
+<div class="container-fluid footer bg-dark py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5 mb-5 align-items-center">
+            <div class="col-lg-7">
+                <div class="position-relative mx-auto">
+                    <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                    <button type="button" class="btn btn-primary position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <a class="btn btn-light btn-md-square me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-md-square me-3" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-md-square me-3" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-light btn-md-square me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" alt="Fiscal Hub Logo" class="mb-3" style="max-width: 150px;">
+                    </a>
+                    <p class="text-light">Fiscal Hub is dedicated to advancing fiscal justice and governance for sustainable development.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Our Programs</h4>
+                    <a href="fiscal-justice.html" class="text-light">Fiscal Justice</a>
+                    <a href="governance-socio-economic.html" class="text-light">Governance and Socio-economic Inclusion</a>
+                    <a href="institutional-development.html" class="text-light">Institutional Development</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Contact Info</h4>
+                    <a href="tel:+254720327370" class="text-light"><i class="fa fa-phone text-primary me-2"></i> +254720-327-370</a>
+                    <a href="tel:+254733961997" class="text-light"><i class="fa fa-phone text-primary me-2"></i> +254733-961-997</a>
+                    <a href="#" class="text-light"><i class="fa fa-map-marker-alt text-primary me-2"></i> Maisonette No.2 Nicholson Drive, Off Ngong Road, P.O. Box 52347 – 00200 | Nairobi, Kenya</a>
+                    <a href="mailto:info@fiscalhub.org" class="text-light"><i class="fas fa-envelope text-primary me-2"></i> info@fiscalhub.org</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="index.html" class="text-light">Home</a>
+                    <a href="who-we-are.html" class="text-light">Who We Are</a>
+                    <a href="fiscal-justice.html" class="text-light">What We Do</a>
+                    <a href="research-policy-analysis.html" class="text-light">How We Work</a>
+                    <a href="blog.html" class="text-light">Media</a>
+                    <a href="contact.html" class="text-light">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+ <!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-md-0">
+                <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Fiscal Hub</a>, All rights reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end text-body">
+                Designed By <a class="border-bottom text-white" href="https://mywebbworks.com/">MyWebbWorks</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

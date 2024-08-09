@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fiscal Hub</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Fiscal Hub, NGO, Social Impact" name="keywords">
+    <meta content="Fiscal Hub is an NGO working towards fiscal justice, governance, socio-economic inclusion, and institutional development." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid header-top">
+        <div class="container d-flex align-items-center">
+            <div class="d-flex align-items-center h-100">
+                <a href="#" class="navbar-brand" style="height: 125px;">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="w-100 h-100">
+                <div class="topbar px-0 py-2 d-none d-lg-block" style="height: 45px;">
+                    <div class="row gx-0 align-items-center">
+                        <div class="col-lg-8 text-center text-lg-center mb-lg-0">
+                            <div class="d-flex flex-wrap">
+                                <div class="border-end border-primary pe-3">
+                                    <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Maisonette No.2 Nicholson Drive, Off Ngong Road</a>
+                                </div>
+                                <div class="ps-3">
+                                    <a href="mailto:info@fiscalhub.org" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>info@fiscalhub.org</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center text-lg-end">
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex border-end border-primary pe-3">
+                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                    <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-bar px-0 py-lg-0" style="height: 80px;">
+                    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-lg-end">
+                        <a href="#" class="navbar-brand-2">
+                            <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i></h1>
+                            <img src="img/logo.jpeg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav mx-0 mx-lg-auto bg-white">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">Who Are We</a>
+                                <a href="service.html" class="nav-item nav-link">What We Do</a>
+                                <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown">Media</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog</a>
+                                    <a href="news.html" class="dropdown-item">News and Publications</a>
+                                    <a href="gallery.html" class="dropdown-item">Image Gallery and Videos</a>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-primary">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="Search..." aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="btn bg-light border input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">What We Do</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active text-primary">What We Do</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- What We Do Section Start -->
+<section id="what-we-do" class="container py-5">
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+        <!-- Fiscal Justice Tab -->
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="fiscal-justice-tab" data-bs-toggle="tab" href="#fiscal-justice" role="tab" aria-controls="fiscal-justice" aria-selected="true">Fiscal Justice</a>
+        </li>
+        <!-- Governance & Socio-Economic Inclusion Tab -->
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="governance-tab" data-bs-toggle="tab" href="#governance" role="tab" aria-controls="governance" aria-selected="false">Governance & Socio-Economic Inclusion</a>
+        </li>
+        <!-- Institutional Development Tab -->
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="institutional-development-tab" data-bs-toggle="tab" href="#institutional-development" role="tab" aria-controls="institutional-development" aria-selected="false">Institutional Development</a>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="myTabContent">
+        <!-- Fiscal Justice Tab Content -->
+        <div class="tab-pane fade show active" id="fiscal-justice" role="tabpanel" aria-labelledby="fiscal-justice-tab">
+            <div class="container">
+                <!-- Section Heading -->
+                <h3 class="mb-3">Fiscal Justice</h3>
+                <p>Fiscal Justice transcends technical tax or budget systems, encompassing power, politics, and empowering people to combat inequality. Our primary focus within this program is Fiscal Transparency and Accountability (FTA).</p>
+                
+                <!-- Subheading -->
+                <h4 class="mt-4 mb-3">1.1 Fiscal Transparency and Accountability</h4>
+                <p>Fiscal transparency and accountability are essential for promoting sustainable economic growth and development at both national and sub-national levels. Fiscal policies and management practices significantly impact revenue mobilization strategies, public debt, resource allocation, public spending, service delivery quality, and overall economic performance.</p>
+                <p>CFA firmly believes that since everyone, in one way or another, pays taxes, every citizen has the right and duty to understand how their government raises and manages public finances. To this end, we strive to be the go-to think tank providing timely and accurate tax policy and public spending analysis at both national and sub-national levels.</p>
+                <p>Our approach to fiscal justice involves building the capacity of citizens, including women, youth, and persons with disabilities (PLWDs), to actively demand transparency and accountability in public resource mobilization (including, but not limited to, taxation and public debt), public spending, participation in the budget-making process, and influencing public finance reforms at both national and sub-national levels of government.</p>
+            </div>
+        </div>
+
+        <!-- Governance Tab Content -->
+        <div class="tab-pane fade" id="governance" role="tabpanel" aria-labelledby="governance-tab">
+            <div class="container">
+                <!-- Section Heading -->
+                <h3 class="mb-3">Governance and Socio-Economic Inclusion</h3>
+                <p>Governance and socio-economic inclusion are crucial to Kenya’s development. Since the adoption of the new Constitution in 2010, Kenya has made notable strides in democratization and governance. However, challenges remain in achieving a truly inclusive society where all citizens have equal access to public resources and opportunities.</p>
+                <p>At CFA, we are dedicated to enhancing governance by amplifying the voices of marginalized groups and holding both national and sub-national governments accountable for their actions and inactions. Our approach includes advocacy and awareness campaigns, as well as monitoring government policies and programs to ensure transparency and accountability.</p>
+                <p>We champion the right to access information and actively encourage citizen participation in decision-making and public policy discussions. We believe that addressing gender inequality involves creating spaces for marginalized voices and empowering citizens to hold the government accountable for fulfilling their basic rights. CFA is committed to advancing gender equality by advocating for the inclusion and rights of women, youth, persons with disabilities, and other minority groups.</p>
+
+                <!-- Subheading -->
+                <h4 class="mt-4 mb-3">2.1 Climate Change and Justice</h4>
+                <p>CFA is dedicated to ensuring that citizens play a central role in shaping and overseeing climate justice policies and actions. We collaborate with communities, especially women, youth, and persons with disabilities, as well as civil society organizations and government bodies at all levels, to generate evidence that informs and influences climate action.</p>
+                <p>Our programs focus on ensuring transparency, accountability, and the protection of the rights of those most vulnerable to climate change. We firmly believe that public actions should promote equity, guarantee access to essential resources, and create environments where young people, women, and girls can thrive in healthy, clean spaces.</p>
+            </div>
+        </div>
+
+        <!-- Institutional Development Tab Content -->
+        <div class="tab-pane fade" id="institutional-development" role="tabpanel" aria-labelledby="institutional-development-tab">
+            <div class="container">
+                <!-- Section Heading -->
+                <h3 class="mb-3">Institutional Development and Strengthening</h3>
+                <p>The Institutional Development and Strengthening program is designed to enhance both the internal and external capacities of CFA.</p>
+                
+                <!-- Internal Focus Subheading -->
+                <h4 class="mt-4 mb-3">Internal Focus</h4>
+                <p>This program aims to ensure CFA’s sustained effectiveness and efficiency in fulfilling its core mandate. We are committed to continually enhancing our human capital, as well as our organizational, administrative, and financial structures to support long-term sustainability.</p>
+                
+                <!-- External Focus Subheading -->
+                <h4 class="mt-4 mb-3">External Focus</h4>
+                <p>Externally, the program seeks to build and strengthen institutional capacities among key partners, including state and non-state actors and development partners. By engaging with stakeholders and implementing targeted advocacy strategies, CFA will address identified gaps through customized training and capacity-building initiatives tailored to the specific needs of our partners.</p>
+                <p>Through ongoing interaction with stakeholders and the application of strategic advocacy, CFA will strive to bridge gaps and enhance the effectiveness of our partners, ensuring that our collective efforts lead to meaningful and sustainable impacts.</p>
+                
+                <!-- Flagship Initiatives Subheading -->
+                <h4 class="mt-4 mb-3">Flagship Initiatives</h4>
+                <ul class="list-unstyled">
+                    <!-- Capacity Building and Training -->
+                    <li><strong>Capacity Building and Training:</strong> CFA undertakes regular workshops and seminars on topics such as fiscal transparency, governance, and policy analysis.</li>
+                    <!-- Technical Assistance and Advisory Services -->
+                    <li><strong>Technical Assistance and Advisory Services:</strong> CFA provides technical assistance to partners in developing and implementing effective policies. The organization also offers monitoring and evaluation support to track the progress and impact of programs and initiatives. Additionally, CFA provides expert advice and consultation services to state and non-state actors on best practices in governance and fiscal management.</li>
+                    <!-- Partnership and Network Building -->
+                    <li><strong>Partnership and Network Building:</strong> CFA organizes stakeholder engagement forums and roundtables to foster dialogue and collaboration, facilitate the formation of coalitions and networks to bolster collective advocacy efforts, and promote public-private partnerships to improve resource mobilization and service delivery.</li>
+                    <!-- Research and Knowledge Management -->
+                    <li><strong>Research and Knowledge Management:</strong> Establishing knowledge hubs and online platforms for sharing resources, research findings, and best practices. CFA also produces and disseminates reports, policy briefs, and publications on key issues related to fiscal transparency and governance.</li>
+                    <!-- Community Engagement and Awareness -->
+                    <li><strong>Community Engagement and Awareness:</strong> CFA regularly undertakes and participates in advocacy campaigns to raise awareness and mobilize communities around key issues, as well as facilitates community dialogues to foster inclusive participation and address local concerns. To enhance the use of technology in advocacy and governance, CFA also provides digital literacy training and stakeholder engagements.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- What We Do Section End -->
+
+<!-- Footer Start -->
+
+<div class="container-fluid footer bg-dark py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+        <div class="row g-5 mb-5 align-items-center">
+            <div class="col-lg-7">
+                <div class="position-relative mx-auto">
+                    <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                    <button type="button" class="btn btn-primary position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <a class="btn btn-light btn-md-square me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-light btn-md-square me-3" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-light btn-md-square me-3" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-light btn-md-square me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" alt="Fiscal Hub Logo" class="mb-3" style="max-width: 150px;">
+                    </a>
+                    <p class="text-light">Fiscal Hub is dedicated to advancing fiscal justice and governance for sustainable development.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Our Programs</h4>
+                    <a href="fiscal-justice.html" class="text-light">Fiscal Justice</a>
+                    <a href="governance-socio-economic.html" class="text-light">Governance and Socio-economic Inclusion</a>
+                    <a href="institutional-development.html" class="text-light">Institutional Development</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Contact Info</h4>
+                    <a href="tel:+254720327370" class="text-light"><i class="fa fa-phone text-primary me-2"></i> +254720-327-370</a>
+                    <a href="tel:+254733961997" class="text-light"><i class="fa fa-phone text-primary me-2"></i> +254733-961-997</a>
+                    <a href="#" class="text-light"><i class="fa fa-map-marker-alt text-primary me-2"></i> Maisonette No.2 Nicholson Drive, Off Ngong Road, P.O. Box 52347 – 00200 | Nairobi, Kenya</a>
+                    <a href="mailto:info@fiscalhub.org" class="text-light"><i class="fas fa-envelope text-primary me-2"></i> info@fiscalhub.org</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="index.html" class="text-light">Home</a>
+                    <a href="who-we-are.html" class="text-light">Who We Are</a>
+                    <a href="fiscal-justice.html" class="text-light">What We Do</a>
+                    <a href="research-policy-analysis.html" class="text-light">How We Work</a>
+                    <a href="blog.html" class="text-light">Media</a>
+                    <a href="contact.html" class="text-light">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+ <!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-md-0">
+                <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Fiscal Hub</a>, All rights reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end text-body">
+                Designed By <a class="border-bottom text-white" href="https://mywebbworks.com/">MyWebbWorks</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
