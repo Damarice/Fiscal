@@ -383,7 +383,7 @@
 
 /*** Carousel Hero Header Start ***/
 .hero-section {
-    background-image: url(../img/carousel-1.jpg);
+    background-image: url(../img/header.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -394,8 +394,8 @@
     position: relative;
 }
 
-.hero-bg-half-1 {
-    background-image: url(../img/header-2.jpg);
+.hero-bg-half {
+    background-image: url(../img/hero.jpg);
     clip-path: polygon(37% 0%, 100% 0%, 100% 100%, 0% 100%);
     filter: grayscale(10%);
     transform: scale(100% - 50%);
@@ -409,63 +409,6 @@
     top: 0;
 }
 
-.hero-bg-half-2 {
-    background-image: url(../img/header-1.jpg);
-    clip-path: polygon(37% 0%, 100% 0%, 100% 100%, 0% 100%);
-    filter: grayscale(10%);
-    transform: scale(100% - 50%);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 58%;
-    height: 100%;
-    right: 0;
-    top: 0;
-}
-
-.hero-shape-1 {
-    background-color: var(--bs-primary);
-    width: 150px;
-    height: 50%;
-    position: absolute;
-    left: 54%;
-    top: 0;
-    transform: translateY(-50%) skew(-26deg, 0deg);
-    position: relative;
-}
-
-.hero-shape-1:before {
-    background-color: var(--bs-dark);
-    content: "";
-    width: 50%;
-    height: 80%;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.hero-shape-2 {
-    background-color: var(--bs-dark);
-    width: 150px;
-    height: 50%;
-    position: absolute;
-    right: -43%;
-    bottom: 0;
-    transform: translateY(50%) skew(-25deg, 0deg);
-    position: relative;
-    z-index: 1;
-}
-
-.hero-shape-2::after {
-    background-color: var(--bs-primary);
-    content: "";
-    width: 75px;
-    height: 80%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
 /*** Carousel Hero Header Start ***/
 .header-carousel .header-carousel-item {
@@ -530,7 +473,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -552,7 +495,7 @@
 .banner {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
