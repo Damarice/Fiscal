@@ -566,6 +566,53 @@
     </div>
 </div>
 <!-- Testimonial End -->
+ <!-- Donation Start -->
+<div class="container-fluid donation bg-light py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="text-center mb-5">
+                    <h4 class="text-primary">Support Our Cause</h4>
+                    <h1 class="display-4 text-dark mb-4">Make a Difference with Your Donation</h1>
+                    <p>Your generous donation helps us continue our work and make a positive impact on the community. Every contribution, no matter the size, helps us reach our goals and support those in need.</p>
+                </div>
+                <div class="donation-form">
+                    <h4 class="text-dark mb-4 text-center">Donate Now</h4>
+                    <form action="submit_donation.php" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Donation Amount</label>
+                            <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter the amount you wish to donate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="payment-method" class="form-label">Payment Method</label>
+                            <select class="form-select" id="payment-method" name="payment-method" required>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bank-transfer">Bank Transfer</option>
+                                <option value="mpesa">M-Pesa</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message (Optional)</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Leave a message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary py-3 px-5 w-100">Submit Donation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Donation End -->
+
 
 <!-- Partners Start -->
 <div class="container-fluid partners-section bg-light py-5">
