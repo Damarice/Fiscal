@@ -87,26 +87,6 @@
 }
 
 /*** Navbar Start ***/
-.header-top .topbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 600;
-    vertical-align: middle;
-    margin-left: 8px;
-    color: var(--bs-primary);
-}
-
-.header-top .topbar .dropdown .dropdown-menu {
-    transform: rotateX(0deg);
-    visibility: visible;
-    background: var(--bs-light);
-    padding-top: 12px;
-    border: 0;
-    transition: 0.8s;
-    opacity: 1;
-}
-
 .header-top {
     height: 125px;
     position: relative;
@@ -140,6 +120,10 @@
     .navbar-brand-2 {
         display: none;
     }
+
+    .navbar-brand {
+        display: block;
+    }
 }
 
 @media (max-width: 991px) {
@@ -160,14 +144,14 @@
     }
 
     .navbar-brand-2 {
-        position: relative;
-        overflow: hidden;
-        width: 200px;
-        height: 100%;
-        padding: 0;
         display: flex;
         align-items: center;
         z-index: 99;
+        width: 200px;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
     }
 
     .navbar-brand-2::before {
@@ -205,6 +189,53 @@
         margin-top: -20px;
     }
 
+    .navbar .navbar-nav {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 50px;
+        background: var(--bs-light);
+    }
+
+    .navbar .navbar-nav .nav-item {
+        display: flex;
+        padding: 12px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .navbar.navbar-expand-lg .navbar-toggler {
+        padding: 8px 15px;
+        border: 1px solid var(--bs-primary);
+        color: var(--bs-primary);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+}
+
+.header-top .topbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    vertical-align: middle;
+    margin-left: 8px;
+    color: var(--bs-primary);
+}
+
+.header-top .topbar .dropdown .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light);
+    padding-top: 12px;
+    border: 0;
+    transition: 0.8s;
+    opacity: 1;
 }
 
 .nav-bar .navbar {
@@ -255,11 +286,6 @@
         align-items: start;
     }
 
-    .navbar .navbar-nav .nav-btn {
-        display: flex;
-        justify-content: start;
-    }
-
     .navbar .navbar-nav {
         width: 100%;
         display: flex;
@@ -267,11 +293,6 @@
         padding-bottom: 20px;
         margin-left: 50px;
         background: var(--bs-light);
-    }
-
-    .navbar .navbar-nav .nav-btn {
-        display: flex;
-        flex-direction: column;
     }
 
     .navbar .navbar-nav .nav-btn a.btn {
@@ -282,6 +303,11 @@
         padding: 8px 15px;
         border: 1px solid var(--bs-primary);
         color: var(--bs-primary);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
     }
 }
 
@@ -351,7 +377,7 @@
         padding: 40px 50px 40px 0;
         z-index: 99;
     }
-    
+
     .navbar-brand::before {
         content: "";
         position: absolute;
@@ -364,7 +390,7 @@
         transform: rotate(-18deg);
         z-index: -1;
     }
-    
+
     .navbar-brand::after {
         content: "";
         position: absolute;
@@ -378,7 +404,39 @@
         z-index: -1;
     }
 }
+
+/* Logo image for larger screens */
+.logo-img {
+    max-height: 100px;
+    height: auto;
+    width: auto;
+}
+
+/* Logo image for mobile screens */
+@media (max-width: 767.98px) {
+    .logo-img {
+        max-height: 50px;
+        height: auto;
+        width: auto;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-brand-2 {
+        display: none;
+    }
+
+    /* Ensure no shape is blocking the logo on mobile */
+    .header-top::after {
+        display: none;
+    }
+}
 /*** Navbar End ***/
+
 
 
 /*** Carousel Hero Header Start ***/
