@@ -1,0 +1,32 @@
+/* Override Bootstrap primary and secondary colors */
+:root {
+    --primary: #1675BB; /* New Primary Color */
+    --secondary: #F79420; /* New Secondary Color */
+}
+
+/* For Bootstrap 5 and later versions */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
