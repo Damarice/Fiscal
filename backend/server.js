@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
     secure: true,
     auth: {
         user: 'info@fiscalhub.org',
-        pass: 'your-email-password' // Replace with your email account’s password
+        pass: 'fiscalhub@2023' // Replace with your email account’s password
     }
 });
 
@@ -34,14 +34,14 @@ app.post('/send-message', (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.error('Error sending email:', error);
-            res.status(500).send('Internal Server Error');
+            console.error('Error sending email:', error); // Log the full error
+            res.status(500).send(`Internal Server Error: ${error.message}`);
         } else {
             console.log('Email sent:', info.response);
             res.status(200).send('Message sent successfully');
         }
     });
-});
+    
 
 // Global error handler
 app.use((err, req, res, next) => {

@@ -30,3 +30,55 @@
 .bg-secondary {
     background-color: var(--secondary) !important;
 }
+
+/* Custom styles for the modal trigger button */
+    /* Custom styles for the modal trigger button */
+    #modalTriggerContainer {
+        position: fixed;
+        top: 80px; /* Adjust this value as needed */
+        right: 0;
+        margin: 20px;
+        z-index: 1000;
+    }
+    #openModalBtn {
+        background-color: #F79420; /* Secondary color */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .social-icons-container {
+        padding-right: 15px; /* Reduce the padding on the right */
+    }
+    .social-icons-container a {
+        margin-right: 5px; /* Adjust this value if needed */
+    }
+
+    @media (max-width: 991.98px) {
+        #modalTriggerContainer {
+            display: flex !important;
+            align-items: center !important;
+            order: 1 !important; /* Ensure it's between the logo and toggle */
+        }
+        
+        .navbar-toggler {
+            order: 2 !important; /* Ensure the toggle button comes after the modal button */
+        }
+
+        .navbar-brand-2 {
+            order: 0 !important; /* Ensure the logo is first */
+        }
+        
+        #openModalBtn {
+            background-color: #F79420 !important; /* Secondary color */
+            color: white !important;
+            border: none !important;
+            padding: 10px 20px !important;
+            border-radius: 5px !important;
+            cursor: pointer !important;
+            font-size: 16px !important;
+        }
+    }
